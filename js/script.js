@@ -30,15 +30,6 @@ src(o0)
 
 render(o1)
 
-// var p1 = new P5;
-// p1.draw = ()=>{
-// //p1.clear();
-// p1.textSize(50);
-// p1.strokeWeight(5);
-// p1.stroke(0,0,0);
-// p1.fill(200,150,0);
-// p1.text('De noche se ven otras cosas',p1.mouseX,p1.mouseY);
-// }
 
 var elt;
 var wordset = ['RrRrRrRrummpff?','Rakete rinnzekete','fö \n bö','fümmsböwötää','zee tee wee bee','kwiiee kwiiee','RrRrRrRrRrRr','böwöböpö','Rattatata tattatata tattatata'];
@@ -59,7 +50,6 @@ const s = ( p1 ) => {
   };
 
   p1.draw = () => {
-    //p1.clear();
     p1.textSize(50);
     p1.strokeWeight(5);
     p1.stroke(0,0,0);
@@ -82,76 +72,5 @@ const s = ( p1 ) => {
 
 let myp5 = new p5(s);
 
-//src(o0).modulateScale(gradient().g(),0.9).color(0.5,0.9,1.2).layer(src(s1)).out(o1)
 
 src(o0).modulateScale(gradient().g(),0.9).color(1.0,1.0,1.0).layer(src(s1)).out(o1)
-
-
-//src(s1).out(o1)
-
-// const codeblocks = document.getElementsByClassName("codeblock");
-
-// let curCanvas;
-
-
-
-// for (const cb of codeblocks) {
-//   const cd = cb.querySelector("div");
-//   cd.style.width = "512px";
-//   cd.style.height = "512px";
-//   cd.style.left = "50%";
-//   cd.style.position = "relative";
-//   cd.style.transform = "translate(-50%, 0%)";
-
-//   let dummyCanvas = document.createElement("canvas");
-//   dummyCanvas.width = 1920;
-//   dummyCanvas.height = 1080;
-//   dummyCanvas.style.zIndex = 1;
-//   dummyCanvas.style.position = "absolute";
-//   dummyCanvas.style.top = 0;
-//   dummyCanvas.style.left = 0;
-
-//   if (curCanvas === undefined) curCanvas = dummyCanvas;
-//   cd.appendChild(dummyCanvas);
-
-//   const linkEl = document.createElement("p");
-//   linkEl.className = "openin";
-//   linkEl.innerHTML = `<a href="https://hydra.ojack.xyz/?code=${btoa(
-//     encodeURIComponent(cb.querySelector("code").textContent)
-//   )}" target="_blank" class="openin">open in editor⤴</a>`;
-
-//   cd.insertAdjacentElement("afterend", linkEl);
-
-//   const spaceEl = document.createElement("div");
-//   spaceEl.className = "spacer";
-
-//   linkEl.insertAdjacentElement("afterend", spaceEl);
-
-//   var observer = new IntersectionObserver(
-//     function(entries) {
-//       if (entries[0].isIntersecting === true) {
-//         // probably you dont need this
-//         // hush();
-//         // solid(0, 0, 0, 0).out(o0);
-//         // solid(0, 0, 0, 0).out(o1);
-//         // solid(0, 0, 0, 0).out(o2);
-//         // solid(0, 0, 0, 0).out(o3);
-//         // render(o0);
-//         setTimeout(() => {
-//           eval(cb.querySelector("code").textContent);
-//         }, 60);
-//         cd.appendChild(hydraCanvas);
-//         curCanvas = dummyCanvas;
-//       }
-//     },
-//     { threshold: [0.7] }
-//   );
-
-//   observer.observe(cb);
-// }
-
-// setInterval(() => {
-//   if (curCanvas != undefined) {
-//     curCanvas.getContext("2d").drawImage(hydraCanvas, 0, 0);
-//   }
-// }, 300);
