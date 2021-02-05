@@ -17,7 +17,7 @@ hydra = new Hydra({
 });
 document.querySelector(".placeholder").appendChild(hydraCanvas)
 
-s0.initImage('/hydra+p5/kurt.jpg')
+s0.initImage('/ursonate/kurt.jpg')
 src(o0)
 .modulate(noise(50).pixelate(10,5),0.001)
 .modulateScale(noise().pixelate(5,10),-0.01)
@@ -61,7 +61,7 @@ const s = ( p1 ) => {
     p1.clear();
     p1.iniciar();
 
-    var audio = new Audio('/hydra+p5/kurt.webm');
+    var audio = new Audio('/ursonate/kurt.webm');
     audio.play();
   }
   p1.iniciar = ()=> {
